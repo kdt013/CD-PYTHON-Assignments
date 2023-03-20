@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.back-land{
+    background-image: url('img/00b127886291fab69d2187edd44af31f.jpg');
+    background-size: cover;
+}
+
+.plan{
+    margin: 0 auto; 
+    top: 120px;
+    right: 200px;
+}
+
+.l_page{
+    /* gap: 200px; */
+    text-align: center;
+    border: solid white 3px;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.18);
+    border-radius: 8px;
+    margin: 0 auto;
+    background-color: lightgrey;
+}
+
+.card{
+    background-color: cadetblue;
+    width: 300px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.dash{
+    background-image: url('img/europe.jpg');
+    background-size: cover;
+}
+
+.new{
+    margin-left: 1100px; 
+    margin-top: 100px;   
+}
+
+.date{
+    width: 400px;
+    height: 300px;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 150px;
+}
+
+.new_trip{
+    background-image: url('img/europe.jpg');
+    background-size: cover;
+
+}
+
+.nav-item{
+    color:white;
+}
+
+.welcome{
+    color: white; 
+    text-align: center;
+}
+
+.destination{
+    background-image: url('img/destination.webp');
+    background-size: cover;
+
+}
+
+.login{
+    background-image: url('img/login.jpg');
+    background-size: cover; 
+    color: white;
+}
+
+
+.dates{
+    background-color: lightblue;
+    width: 100px;
+    height: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.rome{
+    background-image: url('img/rome2.jpg');
+    background-size: cover;
+    color:white;
+}
+
+.alaska{
+    background-image: url('img/alaska2.jpg');
+    background-size: cover;
+    color:white;
+}

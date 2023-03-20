@@ -1,0 +1,27 @@
+SELECT * FROM users;
+
+//create 3 users
+INSERT INTO users (first_name, las_name, email, created_at, updated_at)
+VALUES("Kavita", "Thomas", "kt@codingdojo.com", NOW(), NOW()),
+("Your", "Mom", "milfs@gmail.com", NOW(), NOW()),
+("Santa", "Clause", "christmasrox@yahoo.com", NOW(), NOW());
+
+//retrieve first user using email
+SELECT * FROM users
+WHERE email = 'kt@codingdojo.com'
+
+//retrieve last user using id
+SELECT * FROM users
+WHERE id=3
+
+
+//Change the user with id=3 so their last name is Pancakes
+UPDATE users SET
+las_name = 'Pancakes'
+where id=3;
+
+//Delete the user with id=2 from the database
+DELETE FROM users WHERE id=2;
+
+//Get all the users, sorted by their first name
+ORDER BY first_name DESC;

@@ -1,0 +1,58 @@
+SELECT * FROM dojos_and_ninjas_schema.dojos;
+SELECT * FROM dojos_and_ninjas_schema.ninjas;
+
+----------Create 3 new dojos----------
+INSERT INTO dojos_and_ninjas_schema.dojos(name)
+VALUES('ur mom');
+
+INSERT INTO dojos_and_ninjas_schema.dojos(name)
+VALUES('tellietubbies');
+
+INSERT INTO dojos_and_ninjas_schema.dojos(name)
+VALUES('pilots');
+
+----------Delete the 3 dojos you just created----------
+DELETE FROM dojos_and_ninjas_schema.dojos WHERE id=1;
+DELETE FROM dojos_and_ninjas_schema.dojos WHERE id=2;
+DELETE FROM dojos_and_ninjas_schema.dojos WHERE id=3;
+
+----------Create 3 more dojos----------
+INSERT INTO dojos_and_ninjas_schema.dojos(name)
+VALUES('dad jokes');
+
+INSERT INTO dojos_and_ninjas_schema.dojos(name)
+VALUES('strawberry jello');
+
+INSERT INTO dojos_and_ninjas_schema.dojos(name)
+VALUES('python');
+
+----------Create 3 ninjas that belong to the first dojo----------
+INSERT INTO dojos_and_ninjas_schema.ninjas(first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUE('Kavita', 'Thomas', 22, NOW(), NOW(), 4),
+('Haley', 'Welliver', 22, NOW(), NOW(), 4),
+('Peter', 'Mohammadi', 22, NOW(), NOW(), 4);
+
+----------Create 3 ninjas that belong to the second dojo----------
+INSERT INTO dojos_and_ninjas_schema.ninjas(first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUE('Aishani', 'Saha', 22, NOW(), NOW(), 5),
+('Sophia', 'Martinez', 22, NOW(), NOW(), 5),
+('Chase', 'Price', 22, NOW(), NOW(), 5);
+
+----------Create 3 ninjas that belong to the third dojo----------
+INSERT INTO dojos_and_ninjas_schema.ninjas(first_name, last_name, age, created_at, updated_at, dojo_id)
+VALUE('Justin', 'Shiffler', 22, NOW(), NOW(), 6),
+('Ethan', 'Sandford', 22, NOW(), NOW(), 6),
+('Shivani', 'Patel', 21, NOW(), NOW(), 6);
+
+----------Retrieve all the ninjas from the first dojo----------
+SELECT * FROM dojos_and_ninjas_schema.ninjas
+WHERE dojo_id=4;
+
+
+----------Retrieve all the ninjas from the last dojo----------
+SELECT * FROM dojos_and_ninjas_schema.ninjas
+WHERE dojo_id=6;
+
+----------Retrieve the last ninja's dojo----------
+SELECT * FROM dojos_and_ninjas_schema.ninjas
+WHERE id=14;

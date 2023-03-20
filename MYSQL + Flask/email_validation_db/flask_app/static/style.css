@@ -1,0 +1,14 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+.container{
+    background-color: chartreuse;
+    height: 150px;
+}
+
+.form{
+    width: 300px;
+    margin: 0 auto;
+}

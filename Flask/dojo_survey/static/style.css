@@ -1,0 +1,25 @@
+*{
+    margin:0;
+    padding:0;
+}
+.form{
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: rgb(55, 54, 54);
+    color: white;
+}
+.title{
+    color: rgb(255, 213, 0)
+}
+.submit{
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: cadetblue;
+    color:black;
+}

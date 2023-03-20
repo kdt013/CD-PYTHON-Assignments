@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dojos</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="new_dojo">
+            <h1 style="text-align:center; color: blue;">New Dojo</h1>
+
+            <form class="d-block w-50 mx-auto my-3" method="post" action="/dojos">
+                <div class="mb-3">
+                    <label style="color:white" for="name" class="form-label">Name</label>
+                    <input name="name" type="text" class="form-control" id="name">
+                </div>
+                <button type="submit" class="btn btn-primary">Add Dojo</button>
+            </form>
+        </div>
+        <div class="all_dojos">
+            <h1 style="text-align:center; color: blue;">All Dojos</h1>
+            {% for dojos in dojo_name %}
+                <a class="link" href="/dojo_show/{{dojos.id}}">{{dojos.name}}</a>
+            {% endfor %}
+        </div>
+    </div>
+    <a type="submit" href="/ninjas">Add Ninja</a>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Playground</title>
+</head>
+
+<style>
+    .title {
+        text-align: center;
+    }
+
+    .container {
+        margin: 0 auto;
+        width: 900px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .box {
+        border: 3px solid black;
+        height: 200px;
+        width: 200px;
+        display: flex;
+        margin-top: 10px;
+    }
+    
+</style>
+<body>
+    <h1 class="title">Welcome!</h1>
+
+    {% if times > 36 %}
+    <h1>too many boxes!!</h1>
+    {% endif %}
+    
+    <div class="container">
+        {% for i in range(times) %}
+            <div class="box" style="background-color:{{color}}"></div>
+        {% endfor %}
+    </div>
+</body>
+</html>

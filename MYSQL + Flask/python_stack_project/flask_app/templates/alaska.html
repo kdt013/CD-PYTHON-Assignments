@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alaska</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+</head>
+<body class="alaska">
+    <ul class="nav justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/main">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/create_new">New Trip</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="/logout">Logout</a>
+        </li>
+      </ul>
+
+    <div class="name">
+        <h1 style="text-align:center;">{{logged_user.first_name}}'s trip to Alaska:</h1>
+    </div>
+
+    <table class="table table-bordered border-dark" style="color:black; font-weight:bold">
+        <thead>
+            <tr>
+                <th scope="col">Date</th>
+                <th scope="col">Activity</th>
+                <th scope="col">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="align">
+                <td>June 3, 2022</td>
+                <td>Salmon Fishing</td>
+                <td>
+                    <h8>
+                        <a type="submit" href="#">Edit</a>
+                    </h8>
+                </td>
+            </tr>
+
+            <tr class="align">
+                <td>June 4, 2022</td>
+                <td>Go on a hike</td>
+                <td>
+                    <h8>
+                        <a type="submit" href="#">Edit</a>
+                    </h8>
+                </td>
+            </tr>
+
+            <tr class="align">
+                <td>June 5, 2022</td>
+                <td>Don't get eaten by a bear</td>
+                <td>
+                    <h8>
+                        <a type="submit" href="#">Edit</a>
+                    </h8>
+                </td>
+            </tr>
+
+            <tr class="align">
+                <td>June 6, 2022</td>
+                <td>Whale watching</td>
+                <td>
+                    <h8>
+                        <a type="submit" href="#">Edit</a>
+                    </h8>
+                </td>
+            </tr>
+
+            <tr class="align">
+                <td>June 7, 2022</td>
+                <td>Sea kayaking</td>
+                <td>
+                    <h8>
+                        <a type="submit" href="#">Edit</a>
+                    </h8>
+                </td>
+            </tr>
+
+            <tr class="align">
+                <td>June 8, 2022</td>
+                <td>Don't get run over by a moose</td>
+                <td>
+                    <h8>
+                        <a type="submit" href="#">Edit</a>
+                    </h8>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

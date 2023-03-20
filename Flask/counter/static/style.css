@@ -1,0 +1,10 @@
+*{
+    margin:0;
+    padding:0;
+}
+.buttons{
+    width: 200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:space-between;
+}

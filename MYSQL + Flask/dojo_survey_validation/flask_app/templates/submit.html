@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit</title>
+    <link rel="stylesheet" href="{{url_for('static',filename='style.css')}}">
+</head>
+<body>
+    <div class="submit">
+
+        <h1>Name: {{session["name"]}}</h1>
+        <h3>Dojo Location: {{session["location"]}}</h3>
+        <h3>Favorite Language: {{session["language"]}}</h3>
+        <h3>Comments: {{session["comments"]}}</h3>
+        <a type="submit" class="btn btn-warning" href="/home">Home</a>
+    </div>
+
+    
+</body>
+</html>
